@@ -201,7 +201,7 @@ public abstract class SonicRuntime {
      * @return The root cache dir.
      */
     public File getSonicCacheDir() {
-        String path = context.getFilesDir() + "/Sonic/";
+        String path = context.getExternalFilesDir("") + "/Sonic/";
         File file = new File(path.trim());
         if (!file.exists() && !file.mkdir()) {
             log(TAG, Log.ERROR, "getSonicCacheDir error:make dir(" + file.getAbsolutePath() + ") fail!");

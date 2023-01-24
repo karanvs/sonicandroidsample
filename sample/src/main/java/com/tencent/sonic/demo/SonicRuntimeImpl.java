@@ -128,14 +128,14 @@ public class SonicRuntimeImpl extends SonicRuntime {
 
     @Override
     public File getSonicCacheDir() {
-        if (BuildConfig.DEBUG) {
-            String path = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "sonic/";
-            File file = new File(path.trim());
-            if(!file.exists()){
-                file.mkdir();
-            }
-            return file;
-        }
+//        if (BuildConfig.DEBUG) {
+//            String path = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "sonic/";
+//            File file = new File(path.trim());
+//            if(!file.exists()){
+//                file.mkdir();
+//            }
+//            return file;
+//        }
        return super.getSonicCacheDir();
     }
 
